@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard - Blood Bank</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🩸 Blood Bank Admin
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="admin.html">Dashboard</a>
+            </li>
+
+            <li>
+                <a href="donor.html">Add Donor</a>
+            </li>
+
+            <li>
+                <a href="request.html">Blood Request</a>
+            </li>
+
+            <li>
+                <a href="#" onclick="logout()">Logout</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- Admin Dashboard -->
+
+    <section class="section">
+
+        <h1>Admin Dashboard</h1>
+
+        <p>
+            Manage and monitor the Blood Bank Management System.
+        </p>
+
+
+        <!-- Summary Cards -->
+
+        <div class="blood-container">
+
+            <div class="blood-card">
+
+                <h3>Donors</h3>
+
+                <p id="donorCount">
+                    Loading...
+                </p>
+
+            </div>
+
+
+            <div class="blood-card">
+
+                <h3>Blood Inventory</h3>
+
+                <p id="inventoryCount">
+                    Loading...
+                </p>
+
+            </div>
+
+
+            <div class="blood-card">
+
+                <h3>Blood Requests</h3>
+
+                <p id="requestCount">
+                    Loading...
+                </p>
+
+            </div>
+
+
+            <div class="blood-card">
+
+                <h3>Registered Users</h3>
+
+                <p id="userCount">
+                    Loading...
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Donor Management -->
+
+        <h2 style="margin-top: 40px;">
+            Donor Management
+        </h2>
+
+        <div id="donorTable">
+
+            <p>
+                Loading donor details...
+            </p>
+
+        </div>
+
+
+        <!-- Blood Request Management -->
+
+        <h2 style="margin-top: 40px;">
+            Blood Request Management
+        </h2>
+
+        <div id="requestTable">
+
+            <p>
+                Loading blood requests...
+            </p>
+
+        </div>
+
+
+        <!-- Blood Inventory Management -->
+
+        <h2 style="margin-top: 40px;">
+            Blood Inventory Management
+        </h2>
+
+
+        <!-- Add Inventory Form -->
+
+        <div class="form-container">
+
+            <h3>Add Blood Inventory</h3>
+
+            <form id="inventoryForm">
+
+                <label for="inventoryBloodGroup">
+                    Blood Group
+                </label>
+
+                <select id="inventoryBloodGroup" required>
+
+                    <option value="">
+                        Select Blood Group
+                    </option>
+
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+
+                </select>
+
+
+                <label for="inventoryUnits">
+                    Units
+                </label>
+
+                <input
+                    type="number"
+                    id="inventoryUnits"
+                    min="1"
+                    placeholder="Enter units"
+                    required
+                >
+
+
+                <button type="submit" class="btn">
+                    Add Inventory
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <br>
+
+
+        <!-- Inventory Table -->
+
+        <div id="inventoryTable">
+
+            <p>
+                Loading blood inventory...
+            </p>
+
+        </div>
+
+
+        <!-- Donation Management -->
+
+        <h2 style="margin-top: 40px;">
+            Donation Management
+        </h2>
+
+        <div id="donationTable">
+
+            <p>
+                Loading donation records...
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Blood Bank Management System
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="js/admin.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
