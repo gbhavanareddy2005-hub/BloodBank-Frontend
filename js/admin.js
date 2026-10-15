@@ -1,10 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
+﻿document.addEventListener("DOMContentLoaded", function () {
 
     // =========================
     // DONOR MANAGEMENT
     // =========================
 
-    fetch("http://localhost:8081/api/donors", {
+    fetch("https://bloodbankmanagement-backend-atwx.onrender.com/api/donors", {
         credentials: "include"
     })
         .then(response => {
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // BLOOD INVENTORY
     // =========================
 
-    fetch("http://localhost:8081/api/inventory", {
+    fetch("https://bloodbankmanagement-backend-atwx.onrender.com/api/inventory", {
         credentials: "include"
     })
         .then(response => {
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             };
 
-            fetch("http://localhost:8081/api/inventory", {
+            fetch("https://bloodbankmanagement-backend-atwx.onrender.com/api/inventory", {
 
                 method: "POST",
 
@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // BLOOD REQUEST MANAGEMENT
     // =========================
 
-    fetch("http://localhost:8081/api/requests", {
+    fetch("https://bloodbankmanagement-backend-atwx.onrender.com/api/requests", {
         credentials: "include"
     })
         .then(response => {
@@ -293,7 +293,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // REGISTERED USERS
     // =========================
 
-    fetch("http://localhost:8081/api/users", {
+    fetch("https://bloodbankmanagement-backend-atwx.onrender.com/api/users", {
         credentials: "include"
     })
         .then(response => {
@@ -325,7 +325,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // DONATION MANAGEMENT
     // =========================
 
-    fetch("http://localhost:8081/api/donations", {
+    fetch("https://bloodbankmanagement-backend-atwx.onrender.com/api/donations", {
         credentials: "include"
     })
         .then(response => {
@@ -412,7 +412,7 @@ function approveRequest(id) {
     }
 
     fetch(
-        `http://localhost:8081/api/requests/${id}/approve`,
+        `https://bloodbankmanagement-backend-atwx.onrender.com/api/requests/${id}/approve`,
         {
             method: "PUT",
             credentials: "include"

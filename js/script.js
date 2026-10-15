@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+﻿document.addEventListener("DOMContentLoaded", function () {
 
     // =========================
     // DONOR REGISTRATION
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             };
 
-            fetch("http://localhost:8081/api/donors", {
+            fetch("https://bloodbankmanagement-backend-atwx.onrender.com/api/donors", {
 
                 method: "POST",
 
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (bloodAvailability) {
 
-        fetch("http://localhost:8081/api/inventory")
+        fetch("https://bloodbankmanagement-backend-atwx.onrender.com/api/inventory")
 
             .then(response => {
 

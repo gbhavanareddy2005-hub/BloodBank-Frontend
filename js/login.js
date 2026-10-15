@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+﻿document.addEventListener("DOMContentLoaded", function () {
 
     const loginForm = document.getElementById("loginForm");
 
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 password: document.getElementById("password").value
             };
 
-            fetch("http://localhost:8081/api/users/login", {
+            fetch("https://bloodbankmanagement-backend-atwx.onrender.com/api/users/login", {
 
                 method: "POST",
 

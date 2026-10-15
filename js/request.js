@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+﻿document.addEventListener("DOMContentLoaded", function () {
 
     const requestForm = document.getElementById("requestForm");
 
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             };
 
 
-            fetch("http://localhost:8081/api/requests", {
+            fetch("https://bloodbankmanagement-backend-atwx.onrender.com/api/requests", {
 
                 method: "POST",
 

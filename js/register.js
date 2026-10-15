@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+﻿document.addEventListener("DOMContentLoaded", function () {
 
     const registerForm = document.getElementById("registerForm");
 
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             };
 
 
-            fetch("http://localhost:8081/api/users/register", {
+            fetch("https://bloodbankmanagement-backend-atwx.onrender.com/api/users/register", {
 
                 method: "POST",
 
